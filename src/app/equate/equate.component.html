@@ -1,0 +1,9 @@
+<app-result-here [entered]="entered" [converted]="converted" ></app-result-here>
+<div class="equate" >
+  <div class="allElements">
+      <div class="element" *ngFor="let ele of elements">
+          <button class="button is-primary" (click)="onClick(ele)" > {{ele}}</button>
+      </div>
+  </div>
+  <button class="button is-blue" (click)="onClear()">AC</button>
+</div>
